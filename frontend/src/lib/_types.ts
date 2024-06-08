@@ -1,6 +1,8 @@
-export type FormData = {
-	rollNo: string | null;
-	password: string | null;
-	securityAnswer: string | null;
-	otp: string | null;
+export type kFormData = {
+	roll: string | null;
+	pass: string | null;
+	secret_answer: string | null;
+	email_otp: string | null;
 };
+
+// Path: src/lib/_types.ts

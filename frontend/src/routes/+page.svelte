@@ -3,13 +3,13 @@
   import Header from "../components/Header.svelte";
   import HeroImg from "$lib/assets/hero-img.png";
   import Form from "../components/Form.svelte";
-  import type { FormData } from "$lib/_types";
+  import type { kFormData } from "$lib/_types";
 
-  let formData: FormData = {
-    rollNo: null,
-    password: null,
-    securityAnswer: null,
-    otp: null,
+  let formData: kFormData = {
+    roll: null,
+    pass: null,
+    secret_answer: null,
+    email_otp: null,
   };
 
   let securityQuestion: string | null = null;
@@ -51,7 +51,7 @@
 
 <div id="wrapper">
   <main>
-    <Form {securityQuestion} {formData} />
+    <Form {formData} />
   </main>
   <aside>
     <img src={HeroImg} alt="." />
